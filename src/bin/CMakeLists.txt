@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-add_executable(2048 main.cpp GameEngine.cpp GameLogic.cpp)
+add_executable(2048 main.cpp engine/engine.cpp engine/logic/logic.cpp)
 
 target_link_libraries(2048 display_lib)
 

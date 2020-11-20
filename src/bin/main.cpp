@@ -1,4 +1,4 @@
-#include "GameEngine.h"
+#include "engine/engine.h"
 
 int main() {
     GameEngine game;

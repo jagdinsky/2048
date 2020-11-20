@@ -1,7 +1,7 @@
-#ifndef GAMEENGINE_H
-#define GAMEENGINE_H
+#ifndef ENGINE_H
+#define ENGINE_H
 
-#include "GameLogic.h"
+#include "logic/logic.h"
 #include <display/display.h>
 
 class GameEngine {

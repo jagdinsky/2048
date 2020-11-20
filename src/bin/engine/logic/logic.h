@@ -1,5 +1,5 @@
-#ifndef GAMELOGIC_H
-#define GAMELOGIC_H
+#ifndef LOGIC_H
+#define LOGIC_H
 
 #include <vector>
 #include <utility>
@@ -31,9 +31,7 @@
 //     KEY_RIGHT
 // };
 
-#define SIZE 4
-
-uint32_t random_in_range(uint32_t first, uint32_t n);
+uint32_t RandomInRange(uint32_t first, uint32_t n);
 
 class Table {
  public:
@@ -42,9 +40,9 @@ class Table {
     std::vector<std::vector<int32_t>> TableShift(EKey key, bool& changed);
     std::vector<std::vector<int32_t>> TableSumming(EKey key, bool& changed);
     std::pair<int32_t, int32_t> AddElement();
-    ETileType GetTile(int32_t i, int32_t j);
-    int32_t CountEmpty();
-    bool NoMoves();
+    ETileType GetTile(int32_t i, int32_t j) const;
+    int32_t CountEmpty() const;
+    bool NoMoves() const;
 
  private:
     std::vector<std::vector<ETileType>> matrix_;
